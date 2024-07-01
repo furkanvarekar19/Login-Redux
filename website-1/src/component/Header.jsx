@@ -3,6 +3,7 @@ import './header.css';
 import {useNavigate} from 'react-router-dom';
 import About from './About';
 import Contact from './Contact';
+import Home from './Home';
 
 function Header() {
     const navigate = useNavigate();
@@ -15,9 +16,12 @@ function Header() {
             </div>
             <div className="navbar">
                 <ul>
-                    <li onClick={()=> navigate('/home')} >HOME</li>
+                    <li onClick={()=> navigate('/')} >HOME</li>
                     <li onClick={()=> navigate('/About')} >ABOUT</li>
                     <li onClick={()=> navigate('/Contact')}>CONTACT</li>
+                    {/* <Home/> */}
+                    {/* <About/>
+                    <Contact/> */}
                 </ul>
             </div>
 
